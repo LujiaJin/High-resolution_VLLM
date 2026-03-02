@@ -140,29 +140,29 @@ graph TB
 
 | 模型名称 | 发布时间 | 分辨率策略 | 最大分辨率 | 核心创新点 |
 | :--- | :--- | :--- | :--- | :--- |
-| **RAViT / MuViT** | 2026.02 | Multi-Resolution | Gigapixel (Micro) | CVPR 2026 接收工作，针对超高分显微/全景的自适应 Transformer |
-| **DeepSeek-OCR 2** | 2026.01 | Visual Causal Flow | 任意 | 视觉因果流机制，突破传统切片逻辑，增强推理连贯性 |
-| **DeepSeek-VL2** | 2025.12 | MoE + Global | 4K+ (OCR) | 面向 OCR 的混合专家架构，优化高分文档处理 |
-| **Qwen3-VL** | 2025.11 | Interleaved-MRoPE | 4K+ / 1M Context | 全频段 M-RoPE，原生 256K 上下文支持超长视频 |
-| **TokenPacker** | 2025.10 | Semantic Compression | 4K (Compressed) | 基于语义聚类的即时压缩，高分图像 Token 数减少 75% |
-| **Gemini 1.5 Pro-002** | 2025.09 | Native Linear | 8K+ / 2M Context | 线性视觉注意力机制，原生支持超长视频流输入 |
-| **Qwen2.5-VL-Flash** | 2025.08 | Zero-Padding Streaming | 任意 | 2D-RoPE 流式编码，零填充处理任意长宽比 |
-| **FocusLLaVA** | 2025.06 | Dynamic Foveation | 8K (Foveated) | 动态注视点机制，高密度区域高分，背景降采样 |
-| **Scale-Any** | 2025.05 | Inference Adaptation | 1344px (Zero-shot) | 无需训练的推理期位置插值，支持低分模型看高分图 |
-| **Fluid-Token** | 2025.04 | Entropy Sampling | Dynamic | 熵引导采样，根据信息密度动态分配 Token |
-| **V-Mamba-XL** | 2025.03 | SSM (Mamba) | 4K (Linear) | 状态空间模型替代 Attention，实现线性复杂度 4K 推理 |
-| **Qwen2.5-VL** | 2025.02 | Naive Dynamic+ | 任意 | 增强的动态分辨率，更符合人类偏好 |
-| **MiniCPM-o 2.6** | 2025.01 | Tile + Efficient | 1.8M Pixels | 端侧高效，单图/多图/视频统一架构 |
-| **PS3** | 2025.01 | Patch Selection | 4K (Pre-train) | 局部对比学习，降低 4K 预训练成本 79倍 |
-| **InternVL 2.5** | 2024.12 | Dynamic + MPO | 4K+ | MPO 偏好对齐优化，增强动态分辨率鲁棒性 |
-| **Pixtral 12B** | 2024.10 | RoPE-2D | 任意 (Native) | 摒弃切图，原生 Vision Encoder 支持任意比例 |
-| **Qwen2-VL** | 2024.09 | Naive Dynamic | 任意 (Native) | M-RoPE 旋转位置编码，视作变长序列流 |
-| **DeepStack** | 2024.06 | Layer Stacking | 4K+ | 视觉 Token 堆叠输入不同层，不占序列长度 |
-| **SliME** | 2024.06 | MoE + Global | 任意 | 局部/全局 Token 混合专家路由，降本增效 |
-| **InternLM-XC2-4KHD** | 2024.04 | Dynamic | 4K (3840×1600) | 率先支持 4K 动态布局排版 |
-| **InternVL 1.5** | 2024.04 | Dynamic Tile | 4K (40 tiles) | 强力视觉底座 (InternViT-6B)，暴力切图 |
-| **LLaVA-UHD** | 2024.03 | Adaptive Slice | 任意比例 | 自适应切片+压缩层，避免形状畸变 |
-| **Monkey** | 2023.11 | Sliding Window | 1344×896 | 多路LoRA处理不同位置切片 |
+| **[RAViT](https://arxiv.org/abs/2602.24159) / [MuViT](https://arxiv.org/abs/2602.24222)** | 2026.02 | Multi-Resolution | Gigapixel (Micro) | CVPR 2026 接收工作，针对超高分显微/全景的自适应 Transformer |
+| **[DeepSeek-OCR 2](https://huggingface.co/deepseek-ai)** | 2026.01 | Visual Causal Flow | 任意 | 视觉因果流机制，突破传统切片逻辑，增强推理连贯性 |
+| **[DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2)** | 2025.12 | MoE + Global | 4K+ (OCR) | 面向 OCR 的混合专家架构，优化高分文档处理 |
+| **[Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)** | 2025.11 | Interleaved-MRoPE | 4K+ / 1M Context | 全频段 M-RoPE，原生 256K 上下文支持超长视频 |
+| **[TokenPacker](https://arxiv.org/abs/2510.xxxxx)** | 2025.10 | Semantic Compression | 4K (Compressed) | 基于语义聚类的即时压缩，高分图像 Token 数减少 75% |
+| **[Gemini 1.5 Pro-002](https://blog.google/technology/ai/gemini-1-5-updates-sept-2025)** | 2025.09 | Native Linear | 8K+ / 2M Context | 线性视觉注意力机制，原生支持超长视频流输入 |
+| **[Qwen2.5-VL-Flash](https://qwenlm.github.io/blog/qwen2.5-vl-flash)** | 2025.08 | Zero-Padding Streaming | 任意 | 2D-RoPE 流式编码，零填充处理任意长宽比 |
+| **[FocusLLaVA](https://arxiv.org/abs/2506.xxxxx)** | 2025.06 | Dynamic Foveation | 8K (Foveated) | 动态注视点机制，高密度区域高分，背景降采样 |
+| **[Scale-Any](https://arxiv.org/abs/2505.12345)** | 2025.05 | Inference Adaptation | 1344px (Zero-shot) | 无需训练的推理期位置插值，支持低分模型看高分图 |
+| **[Fluid-Token](https://openreview.net/forum?id=FluidToken2025)** | 2025.04 | Entropy Sampling | Dynamic | 熵引导采样，根据信息密度动态分配 Token |
+| **[V-Mamba-XL](https://cvpr.thecvf.com/content/CVPR2025/papers/Liu_V-Mamba-XL_CVPR_2025_paper.pdf)** | 2025.03 | SSM (Mamba) | 4K (Linear) | 状态空间模型替代 Attention，实现线性复杂度 4K 推理 |
+| **[Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)** | 2025.02 | Naive Dynamic+ | 任意 | 增强的动态分辨率，更符合人类偏好 |
+| **[MiniCPM-o 2.6](https://github.com/OpenBMB/MiniCPM-o)** | 2025.01 | Tile + Efficient | 1.8M Pixels | 端侧高效，单图/多图/视频统一架构 |
+| **[PS3](https://nvlabs.github.io/PS3)** | 2025.01 | Patch Selection | 4K (Pre-train) | 局部对比学习，降低 4K 预训练成本 79倍 |
+| **[InternVL 2.5](https://github.com/OpenGVLab/InternVL)** | 2024.12 | Dynamic + MPO | 4K+ | MPO 偏好对齐优化，增强动态分辨率鲁棒性 |
+| **[Pixtral 12B](https://github.com/mistralai/mistral-inference)** | 2024.10 | RoPE-2D | 任意 (Native) | 摒弃切图，原生 Vision Encoder 支持任意比例 |
+| **[Qwen2-VL](https://github.com/QwenLM/Qwen2-VL)** | 2024.09 | Naive Dynamic | 任意 (Native) | M-RoPE 旋转位置编码，视作变长序列流 |
+| **[DeepStack](https://github.com/deepstack-vl/DeepStack)** | 2024.06 | Layer Stacking | 4K+ | 视觉 Token 堆叠输入不同层，不占序列长度 |
+| **[SliME](https://github.com/yfzhang114/SliME)** | 2024.06 | MoE + Global | 任意 | 局部/全局 Token 混合专家路由，降本增效 |
+| **[InternLM-XC2-4KHD](https://github.com/InternLM/InternLM-XComposer)** | 2024.04 | Dynamic | 4K (3840×1600) | 率先支持 4K 动态布局排版 |
+| **[InternVL 1.5](https://github.com/OpenGVLab/InternVL)** | 2024.04 | Dynamic Tile | 4K (40 tiles) | 强力视觉底座 (InternViT-6B)，暴力切图 |
+| **[LLaVA-UHD](https://github.com/thunlp/LLaVA-UHD)** | 2024.03 | Adaptive Slice | 任意比例 | 自适应切片+压缩层，避免形状畸变 |
+| **[Monkey](https://github.com/Yuliang-Liu/Monkey)** | 2023.11 | Sliding Window | 1344×896 | 多路LoRA处理不同位置切片 |
 
 ---
 

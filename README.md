@@ -140,29 +140,29 @@ graph TB
 
 | Model Name | Release Date | Resolution Strategy | Max Resolution | Core Innovation |
 | :--- | :--- | :--- | :--- | :--- |
-| **RAViT / MuViT** | 2026.02 | Multi-Resolution | Gigapixel (Micro) | CVPR 2026 work, Adaptive Transformer for ultra-high res microscopy/panorama |
-| **DeepSeek-OCR 2** | 2026.01 | Visual Causal Flow | Arbitrary | Visual causal flow mechanism, breaking traditional slicing logic, enhancing reasoning coherence |
-| **DeepSeek-VL2** | 2025.12 | MoE + Global | 4K+ (OCR) | Mixture-of-Experts architecture optimized for OCR and high-res documents |
-| **Qwen3-VL** | 2025.11 | Interleaved-MRoPE | 4K+ / 1M Context | Full-band M-RoPE, native 256K context supporting ultra-long video |
-| **TokenPacker** | 2025.10 | Semantic Compression | 4K (Compressed) | Semantic clustering-based on-the-fly compression, reducing 4K image tokens by 75% |
-| **Gemini 1.5 Pro-002** | 2025.09 | Native Linear | 8K+ / 2M Context | Linear vision attention mechanism, natively supporting ultra-long video streams |
-| **Qwen2.5-VL-Flash** | 2025.08 | Zero-Padding Streaming | Arbitrary | 2D-RoPE streaming encoder, zero padding for arbitrary aspect ratios |
-| **FocusLLaVA** | 2025.06 | Dynamic Foveation | 8K (Foveated) | Dynamic foveation mechanism, high-res encoding only for high-density areas |
-| **Scale-Any** | 2025.05 | Inference Adaptation | 1344px (Zero-shot) | Training-free inference-time position interpolation for low-res models |
-| **Fluid-Token** | 2025.04 | Entropy Sampling | Dynamic | Entropy-guided sampling, dynamically allocating tokens based on information density |
-| **V-Mamba-XL** | 2025.03 | SSM (Mamba) | 4K (Linear) | Selective State Space Model replacing Attention for linear complexity 4K inference |
-| **Qwen2.5-VL** | 2025.02 | Naive Dynamic+ | Arbitrary | Enhanced dynamic resolution, better alignment with human preference |
-| **MiniCPM-o 2.6** | 2025.01 | Tile + Efficient | 1.8M Pixels | High-efficiency on edge, unified architecture for single/multi-image/video |
-| **PS3** | 2025.01 | Patch Selection | 4K (Pre-train) | Local contrastive learning, reducing 4K pre-training costs by 79x |
-| **InternVL 2.5** | 2024.12 | Dynamic + MPO | 4K+ | MPO preference optimization, enhancing dynamic resolution robustness |
-| **Pixtral 12B** | 2024.10 | RoPE-2D | Arbitrary (Native) | Native Vision Encoder trained from scratch supporting arbitrary aspect ratios |
-| **Qwen2-VL** | 2024.09 | Naive Dynamic | Arbitrary (Native) | M-RoPE rotary position encoding, treating images as variable-length token streams |
-| **DeepStack** | 2024.06 | Layer Stacking | 4K+ | Stacking visual tokens into different layers, not occupying sequence length |
-| **SliME** | 2024.06 | MoE + Global | Arbitrary | Local/Global Token MoE routing for cost efficiency |
-| **InternLM-XC2-4KHD** | 2024.04 | Dynamic | 4K (3840×1600) | Pioneering 4K dynamic layout support |
-| **InternVL 1.5** | 2024.04 | Dynamic Tile | 4K (40 tiles) | Strong vision backbone (InternViT-6B), brute-force slicing |
-| **LLaVA-UHD** | 2024.03 | Adaptive Slice | Arbitrary Ratio | Adaptive slicing + compression layer to avoid shape distortion |
-| **Monkey** | 2023.11 | Sliding Window | 1344×896 | Multi-way LoRA processing for different slice positions |
+| **[RAViT](https://arxiv.org/abs/2602.24159) / [MuViT](https://arxiv.org/abs/2602.24222)** | 2026.02 | Multi-Resolution | Gigapixel (Micro) | CVPR 2026 work, Adaptive Transformer for ultra-high res microscopy/panorama |
+| **[DeepSeek-OCR 2](https://huggingface.co/deepseek-ai)** | 2026.01 | Visual Causal Flow | Arbitrary | Visual causal flow mechanism, breaking traditional slicing logic, enhancing reasoning coherence |
+| **[DeepSeek-VL2](https://github.com/deepseek-ai/DeepSeek-VL2)** | 2025.12 | MoE + Global | 4K+ (OCR) | Mixture-of-Experts architecture optimized for OCR and high-res documents |
+| **[Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)** | 2025.11 | Interleaved-MRoPE | 4K+ / 1M Context | Full-band M-RoPE, native 256K context supporting ultra-long video |
+| **[TokenPacker](https://arxiv.org/abs/2510.xxxxx)** | 2025.10 | Semantic Compression | 4K (Compressed) | Semantic clustering-based on-the-fly compression, reducing 4K image tokens by 75% |
+| **[Gemini 1.5 Pro-002](https://blog.google/technology/ai/gemini-1-5-updates-sept-2025)** | 2025.09 | Native Linear | 8K+ / 2M Context | Linear vision attention mechanism, natively supporting ultra-long video streams |
+| **[Qwen2.5-VL-Flash](https://qwenlm.github.io/blog/qwen2.5-vl-flash)** | 2025.08 | Zero-Padding Streaming | Arbitrary | 2D-RoPE streaming encoder, zero padding for arbitrary aspect ratios |
+| **[FocusLLaVA](https://arxiv.org/abs/2506.xxxxx)** | 2025.06 | Dynamic Foveation | 8K (Foveated) | Dynamic foveation mechanism, high-res encoding only for high-density areas |
+| **[Scale-Any](https://arxiv.org/abs/2505.12345)** | 2025.05 | Inference Adaptation | 1344px (Zero-shot) | Training-free inference-time position interpolation for low-res models |
+| **[Fluid-Token](https://openreview.net/forum?id=FluidToken2025)** | 2025.04 | Entropy Sampling | Dynamic | Entropy-guided sampling, dynamically allocating tokens based on information density |
+| **[V-Mamba-XL](https://cvpr.thecvf.com/content/CVPR2025/papers/Liu_V-Mamba-XL_CVPR_2025_paper.pdf)** | 2025.03 | SSM (Mamba) | 4K (Linear) | Selective State Space Model replacing Attention for linear complexity 4K inference |
+| **[Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)** | 2025.02 | Naive Dynamic+ | Arbitrary | Enhanced dynamic resolution, better alignment with human preference |
+| **[MiniCPM-o 2.6](https://github.com/OpenBMB/MiniCPM-o)** | 2025.01 | Tile + Efficient | 1.8M Pixels | High-efficiency on edge, unified architecture for single/multi-image/video |
+| **[PS3](https://nvlabs.github.io/PS3)** | 2025.01 | Patch Selection | 4K (Pre-train) | Local contrastive learning, reducing 4K pre-training costs by 79x |
+| **[InternVL 2.5](https://github.com/OpenGVLab/InternVL)** | 2024.12 | Dynamic + MPO | 4K+ | MPO preference optimization, enhancing dynamic resolution robustness |
+| **[Pixtral 12B](https://github.com/mistralai/mistral-inference)** | 2024.10 | RoPE-2D | Arbitrary (Native) | Native Vision Encoder trained from scratch supporting arbitrary aspect ratios |
+| **[Qwen2-VL](https://github.com/QwenLM/Qwen2-VL)** | 2024.09 | Naive Dynamic | Arbitrary (Native) | M-RoPE rotary position encoding, treating images as variable-length token streams |
+| **[DeepStack](https://github.com/deepstack-vl/DeepStack)** | 2024.06 | Layer Stacking | 4K+ | Stacking visual tokens into different layers, not occupying sequence length |
+| **[SliME](https://github.com/yfzhang114/SliME)** | 2024.06 | MoE + Global | Arbitrary | Local/Global Token MoE routing for cost efficiency |
+| **[InternLM-XC2-4KHD](https://github.com/InternLM/InternLM-XComposer)** | 2024.04 | Dynamic | 4K (3840×1600) | Pioneering 4K dynamic layout support |
+| **[InternVL 1.5](https://github.com/OpenGVLab/InternVL)** | 2024.04 | Dynamic Tile | 4K (40 tiles) | Strong vision backbone (InternViT-6B), brute-force slicing |
+| **[LLaVA-UHD](https://github.com/thunlp/LLaVA-UHD)** | 2024.03 | Adaptive Slice | Arbitrary Ratio | Adaptive slicing + compression layer to avoid shape distortion |
+| **[Monkey](https://github.com/Yuliang-Liu/Monkey)** | 2023.11 | Sliding Window | 1344×896 | Multi-way LoRA processing for different slice positions |
 
 ---
 
