@@ -2,6 +2,8 @@
 
 # Large Vision-Language Model (LVLM) High-Resolution Image Processing Research Roadmap & Literature Library
 
+<sub>💡 **Tip**: If you find this repository's structure or content difficult to understand, visit [deepwiki](https://deepwiki.com/LujiaJin/High-resolution_VLLM) for a comprehensive detailed explanation.</sub>
+
 ## 🎬 Evolutionary History Overview: A Revolution in "Vision"
 
 The evolution of Large Vision-Language Models (LVLM / VLM) has a core thread: **how to make models see more clearly**. This is essentially a journey of breaking through the input limitations of early vision encoders (typically ViT pre-trained at 224x224 or 336x336 resolution). We can divide this history into six distinct phases, especially with the native multimodal and ultra-long context explosion in 2025.
